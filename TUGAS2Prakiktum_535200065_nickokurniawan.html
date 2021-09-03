@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- css style.css -->
+    <link rel="stylesheet" href="TUGAS2Prakiktum_535200065_nickokurniawan.css" />
+
+    <title>Kelas Web Programming</title>
+  </head>
+  <body>
+    <section id="banner">
+      <img src="/images/logo.png" alt="logo" class="logo" />
+      <div class="banner-text">
+        <h1>Web Progamming</h1>
+        <p>Matakuliah Pemograman Web Menggunakan HTML, CSS, Javascript</p>
+        <div class="banner-btn">
+          <a href="#"><span></span> Find Out</a>
+          <a href="#"><span></span> Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+            <a href="#">Kelas</a>
+            <a href="#">Kegiatan</a>
+            <a href="#">Kontak</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuBtn"><i class="fas fa-bars" id="menu"></i></div>
+
+    <section id="feature">
+      <div class="title-text">
+        <p>Frontend Development</p>
+        <h1>Belajar Frontend HTML & CSS</h1>
+      </div>
+    </section>
+
+    <div class="feature-box">
+      <div class="features">
+        <h1>Git Version Control</h1>
+        <div class="features-desc">
+          <div class="feature-icon"><i class="fab fa-git-square"></i></div>
+          <div class="feature-text">
+            <p>
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
+              sint cillum sint consectetur cupidatat.
+            </p>
+          </div>
+        </div>
+        <h1>HTML 5</h1>
+        <div class="features-desc">
+          <div class="feature-icon"><i class="fab fa-html5"></i></div>
+          <div class="feature-text">
+            <p>
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
+              sint cillum sint consectetur cupidatat.
+            </p>
+          </div>
+        </div>
+        <h1>CSS 3</h1>
+        <div class="features-desc">
+          <div class="feature-icon"><i class="fab fa-css3-alt"></i></div>
+          <div class="feature-text">
+            <p>
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
+              sint cillum sint consectetur cupidatat.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="features-img">
+        <img src="/images/gbr1.jpg" alt="gbr1" />
+      </div>
+    </div>
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var sideNav = document.getElementById("sideNav");
+      var menu = document.getElementById("menu");
+
+      sideNav.style.right = "-250px";
+
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+          menu.classList.remove("fa-bars");
+          menu.classList.add("fa-window-close");
+        } else {
+          sideNav.style.right = "-250px";
+          menu.classList.remove("fa-window-close");
+          menu.classList.add("fa-bars");
+        }
+      };
+    </script>
+  </body>
+</html>
